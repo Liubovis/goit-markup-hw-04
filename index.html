@@ -38,12 +38,20 @@
           </nav>
 
           <ul class="contact-list">
-            <li class="contact-item icon-envelope">
-              <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="contact-item">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              <a class="contact-link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
             </li>
 
-            <li class="contact-item icon-smartphone">
-              <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="contact-item">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              <a class="contact-link" href="tel:+380961111111">
+                +38 096 111 11 11</a>
             </li>
           </ul>
         </div>
@@ -67,26 +75,42 @@
           <h2 class="title visually-hidden">Наші переваги</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
-              <div class="benefits-icon icon-antenna"></div>
+              <div class="benefits-icon-wrapper">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#antenna"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="benefits-desc">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              <p class="benefits-desc">Ідейні міркування, і наіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
             <li class="benefits-item">
-              <div class="benefits-icon icon-clock"></div>
+              <div class="benefits-icon-wrapper">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="benefits-desc">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
 
             <li class="benefits-item">
-              <div class="benefits-icon icon-diagram"></div>
+              <div class="benefits-icon-wrapper">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#diagram"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">ПЛАНУВАННЯ</h3>
               <p class="benefits-desc">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
 
             <li class="benefits-item">
-              <div class="benefits-icon icon-astronaut"></div>
+              <div class="benefits-icon-wrapper">
+                <svg class="benefits-icon">
+                  <use href="./images/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="benefits-desc">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
@@ -126,6 +150,12 @@
               <div class="team-desc">
                 <h3 class="team-title">Ігор Дем'яненко</h3>
                 <p class="team-position">Product Designer</p>
+                <ul>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
               </div>
             </li>
 
@@ -157,29 +187,69 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- Regular customers -->
+    <section class="regular">
       <div class="container">
-        <a class="footer-link logo-footer" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-
-        <address class="address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link" href="https://goo.gl/maps/Fy1uCrwSByk2Ayvy6" target="_blank"
-                rel="noopener noreferrer">
-                м. Київ, пр-т ЛесіУкраїнки, 26
-              </a>
-            </li>
-
-            <li class="address-item">
-              <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-
-            <li class="address-item">
-              <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <h2 class="title">Постійні клієнти</h2>
+        <ul class="regular-list">
+          <li class="regular-item">
+            <a class="regular-link" href=""></a>
+          </li>
+          <li class="regular-item">
+            <a class="regular-link" href=""></a>
+          </li>
+          <li class="regular-item">
+            <a class="regular-link" href=""></a>
+          </li>
+          <li class="regular-item">
+            <a class="regular-link" href=""></a>
+          </li>
+          <li class="regular-item">
+            <a class="regular-link" href=""></a>
+          </li>
+          <li class="regular-item">
+            <a class="regular-link" href=""></a>
+          </li>
+        </ul>
       </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-wrapper">
+        <div class="footer-adress-wrapper">
+          <a class="footer-link logo-footer" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-item">
+                <a class="address-link" href="https://goo.gl/maps/Fy1uCrwSByk2Ayvy6" target="_blank"
+                  rel="noopener noreferrer">
+                  м. Київ, пр-т ЛесіУкраїнки, 26
+                </a>
+              </li>
+
+              <li class="address-item">
+                <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+
+              <li class="address-item">
+                <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-socials">
+          <p></p>
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+
     </footer>
   </body>
 
